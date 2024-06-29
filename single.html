@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMRSK - Advanced Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">PMRSK</div>
+        <div class="subtext">wdcomp.</div>
+    </header>
+    <div class="container">
+        <div class="editor-container">
+            <div class="editor-tabs">
+                <div class="editor-tab active" data-target="#htmlContent">HTML</div>
+                <div class="editor-tab" data-target="#cssContent">CSS</div>
+                <div class="editor-tab" data-target="#jsContent">JavaScript</div>
+            </div>
+            <div id="htmlContent" class="editor-content active">
+                <textarea id="htmlCode"></textarea>
+            </div>
+            <div id="cssContent" class="editor-content">
+                <textarea id="cssCode"></textarea>
+            </div>
+            <div id="jsContent" class="editor-content">
+                <textarea id="jsCode"></textarea>
+            </div>
+        </div>
+        <div class="divider" id="divider"></div>
+        <div class="output-container">
+            <div class="output-label">Output</div>
+            <iframe id="output" class="output-frame"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
